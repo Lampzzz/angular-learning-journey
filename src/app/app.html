@@ -1,10 +1,6 @@
 <div>
-  <h1>Count: {{ count() }}</h1>
-  <app-user-profile />
-  <app-form />
-
-  <h1>Double Count: {{ doubleCount() }}</h1>
-  <button (click)="reset()">Reset</button>
-  <button (click)="increament()">Increament</button>
-  <button (click)="decreament()">Decreament</button>
+  <h1>Hello World</h1>
+  <p>{{ childMessage }}</p>
+  <app-card message="Hello" (buttonClick)="onMessageClick($event)" />
+  <p>Message from child: {{ childMessage }}</p>
 </div>
