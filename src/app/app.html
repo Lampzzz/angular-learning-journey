@@ -1,6 +1,8 @@
-<div>
-  <h1>Hello World</h1>
-  <p>{{ childMessage }}</p>
-  <app-card message="Hello" (buttonClick)="onMessageClick($event)" />
-  <p>Message from child: {{ childMessage }}</p>
-</div>
+<main>
+  <header class="brand-name">
+    <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true" />
+  </header>
+  <section class="content">
+    <app-home></app-home>
+  </section>
+</main>

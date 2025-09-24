@@ -1,16 +1,10 @@
 import { Component } from '@angular/core';
-import { Card } from './playground/card/card';
+import { Home } from './home/home';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [Card],
+  imports: [Home],
 })
-export class App {
-  childMessage = ""
-
-  onMessageClick(message: string) {
-    this.childMessage = message
-  }
-}
+export class App {}
